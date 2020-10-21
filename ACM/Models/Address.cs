@@ -14,7 +14,7 @@ namespace ACM.Models
       public string Country { get; set; }
       public string PostalCode { get; set; }
       public string State { get; set; }
-      public string StretLine1 { get; set; }
+      public string StreetLine1 { get; set; }
       public string StreetLine2 { get; set; }
 
       public bool Validate()
