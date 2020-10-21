@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.Models
 {
-   class Address
+   public class Address
    {
       public int AddressID { get; private set; }
       public int AddressType { get; set; }

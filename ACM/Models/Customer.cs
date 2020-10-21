@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACM.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace ACM.BL
     {
 
       public int CustomerId { get; private set; }
+      public List<Address> AddressList { get; set; }
       public string Email { get; set; }
       public string FirstName { get; set; }
 
@@ -49,11 +51,12 @@ namespace ACM.BL
          return isValid;
       }
 
-      public Customer() {}
+      public Customer(): this(0) {}
 
       public Customer(int customerId)
       {
          this.CustomerId = customerId;
+         AddressList = new List<Address>();
       }
 
    }
